@@ -1,0 +1,122 @@
+Start
+     Prompt user for name
+     Get name
+     Prompt user for phone number
+     Get phone number
+     Display "Name:" +name+ ",Phone Number:"+phone number
+
+
+     public class phoneBookApp{
+      phoneBook(list of Contact)
+
+      Main Funtion
+      DO{
+        Display PhoneBook Application
+        Display menu options(1.Inert Contact
+                             2.Serach Contacts
+                             3.Display All Contacts
+                             4.Delete Contact
+                             5.Update Contacts
+                             6.Sort Contacts
+                             0.Exit)
+     
+        Input choice 
+        if(choice==1) then
+          call insertContact()
+
+        else-If(choice==2) then
+           call searchContact()
+
+        else-If(choice==3) then
+           call displayAllContacts()
+
+        else-If(choice==4) then
+           call deleteContact()
+        
+        else-If(choice==5) then
+           call updateContact()
+
+        else-If(choice==6) then
+           call sortContacts()
+
+        else
+            display" Invalid choice"
+
+     } while(choice!=0);
+       
+         endIF
+        endIF
+       endIF
+      endIF
+     endIF
+
+
+
+insertContact(Input){
+                     Enter name
+                     Enter phone number
+                     Create new contact
+                     Add new contact to phone book
+                     Display " Contact added."
+                    }
+
+
+searchContact(Input){
+                     Input name to be searched
+                      for(i=0; i<=contacts in phoneBook; i++){
+                        if(nameInserted==nameInPhoneBook) then
+                         Display Contact details
+                        return
+                       else
+                          Display "Contact not found."
+                        }
+                    }    
+
+
+displayAllContacts(Input){
+                          If(phonebook==empty) then
+                            Display "The phoneBook is empty."
+                          else
+                             Display all contacts in phoneBook
+                         }
+
+
+deleteContact(Input){
+                     Enter name to be deleted
+                      for(i=0; i<=contacts in phoneBook; i++){
+                        if(nameInsterted==nameInPhoneBook) then
+                         Delete nameInserted from phoneBook
+                           Display "Contact has been deleted."
+                          return;
+                        else
+                            Dislay "Contact not Found"
+                        }
+                    }
+
+
+updateContact(Input){
+                     Enter name to update
+                      for(i=0; i<=contacts in phoneBook; i++){
+                        if(nameInserted==nameInPhoneBook) then
+                         Update contact
+                         Display "Contact updated successfully."
+                         return;
+                        else
+                           Display"Contact not Found."
+                          }
+                     }
+
+
+sortContacts(Input){
+                    if(phoneBook==empty) then
+                     Display "Phonebook is empty"
+                     return;
+                    else
+                        Sort contacts in alphabetical order by name 
+                      Display "Contacts sorted alphabetically by name."
+           }
+
+
+
+End
+               

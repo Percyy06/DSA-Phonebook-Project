@@ -1,11 +1,5 @@
 Start
-     Prompt user for name
-     Get name
-     Prompt user for phone number
-     Get phone number
-     Display "Name:" +name+ ",Phone Number:"+phone number
-
-
+     
      public class phoneBookApp{
       phoneBook(list of Contact)
 
